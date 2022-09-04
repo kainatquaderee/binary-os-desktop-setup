@@ -1,0 +1,16 @@
+#!/bin/bash
+  #################################################################
+   #                                                               #
+   #                 binary-os-gaming-setup                        #
+   #           Copyright (C) 2022 Kainat quaderee                  #
+   #       Licensed under the  non redistributable license      #
+   #                                                               #
+   #                                                               #
+   #                                                               #
+   #################################################################
+x=$(yad  --form --width 800 --height 800 --title "select-office" --columns=2 \
+--field="libre-office":BTN /usr/libexec/gos/setup/office-setup/scripts/libre-office-setup.sh \
+--field="only-office":BTN /usr/libexec/gos/setup/office-setup/scripts/only-office-setup.sh \
+--field="both-office":BTN /usr/libexec/gos/setup/office-setup/scripts/both-office.sh \
+)
+

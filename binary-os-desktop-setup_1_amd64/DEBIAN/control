@@ -1,0 +1,11 @@
+Package: binary-os-desktop-setup
+Source: ubuntu-meta
+Version: 1.00
+Architecture: all
+Maintainer: binary-os maintener(kainat quaderee)
+Installed-Size: 
+Depends:yad,git
+Provides: packagekit-installer
+Section: metapackages
+Priority: optional
+Description: auto-tweak-desktop
