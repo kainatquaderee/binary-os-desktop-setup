@@ -30,3 +30,7 @@ apt-get update
 apt-get install -y polychromatic 
 apt-get install -y vkbasalt
 flatpak install flathub com.discordapp.Discord -y
+apt-get install -y mumble
+add-apt-repository ppa:thopiekar/openrgb
+apt update -y
+apt install openrgb -y
