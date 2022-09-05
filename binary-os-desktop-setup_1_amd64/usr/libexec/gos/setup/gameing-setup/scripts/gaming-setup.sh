@@ -43,6 +43,12 @@ apt-get update -y
 apt-get install openrgb -y
 echo "100" ; sleep 1
 ) |
-yad --progress --width 500 --height 200  \
+zenity --progress \
   --title="setting up please wait" \
   --text="" \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="Update canceled."
+fi
