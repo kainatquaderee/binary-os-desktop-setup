@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo cp -R ./usr /
+sudo cp -R usr /
