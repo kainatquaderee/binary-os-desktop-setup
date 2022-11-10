@@ -10,6 +10,6 @@
    #################################################################
    cd /usr/libexec/gos/setup
 mode=$(yad  --form --width 800 --height 800 --title "select-use" --columns=2 \
---field="for-gaming":BTN "sudo do-gaming-setup" \
---field="remove-gaming-setup":BTN "sudo remove-gaming-setup" \
+--field="for-gaming":BTN "kdesu do-gaming-setup" \
+--field="remove-gaming-setup":BTN "kdesu remove-gaming-setup" \
 )
