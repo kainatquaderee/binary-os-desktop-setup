@@ -10,7 +10,6 @@
    #################################################################
    cd /usr/libexec/gos/setup
 mode=$(yad  --form --width 800 --height 800 --title "select-use" --columns=2 \
---field="for-gaming":BTN /usr/libexec/gos/setup/gameing-setup/gaming-setup-main.sh \
---field="office-setup":BTN /usr/libexec/gos/setup/office-setup/office-setup \
---field="remove-gaming-setup":BTN /usr/libexec/gos/setup/gameing-setup/scripts/gaming-setup-remove.sh \
+--field="for-gaming":BTN "sudo do-gaming-setup" \
+--field="remove-gaming-setup":BTN "sudo remove-gaming-setup" \
 )
