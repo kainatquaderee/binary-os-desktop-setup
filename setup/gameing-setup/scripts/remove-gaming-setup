@@ -8,7 +8,7 @@
    #                                                               #
    #                                                               #
    #################################################################
- apt-get update
+ apt-get update -y
  apt-get upgrade -y
  apt-get remove lutris -y
  apt-get remove steam -y
@@ -23,10 +23,10 @@ flatpak uninstall net.davidotek.pupgui2 -y
  apt-get remove -y mangohud
  apt-get remove -y piper
  add-apt-repository -r -y ppa:openrazer/stable
- apt-get update
- apt-get remove openrazer-meta
+ apt-get update -y
+ apt-get remove openrazer-meta -y
  add-apt-repository -r -y ppa:polychromatic/stable
- apt-get update
+ apt-get update -y
  apt-get remove -y polychromatic
  apt-get remove -y vkbasalt
 flatpak uninstall com.discordapp.Discord -y
